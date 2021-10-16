@@ -1,39 +1,66 @@
-# Script list for "Redmine View Customize Plugin"
+# Code examples for "Redmine View Customize Plugin"
 
-* [プロジェクト毎にヘッダの色を変える](./change_header_color_by_project.css)
-* [チケット一覧を識別しやすいように装飾](./decorate_issue_list.css)
-* [チケット作成時にトラッカーに応じてデフォルト値を設定](./set_default_value_at_change_tracker.js)
-* [サイドバーを開閉式に](./toggle_sidebar.js)
-* [「全てのチケット一覧」リンクをヘッダに](./add_issues_link_on_header.js)
-* [進行中にもかかわらず担当者が未設定の場合に警告を表示](./show_alert_if_not_assign.js)
-* [チケット作成、編集時の項目名を変える](./change_issue_form_filed_name.js)
-* [ユーザ選択のカスタムフィールドで自分を選択する項目を先頭に追加](./add_me_for_custome_users_field.js)
-* [プロジェクト一覧からの各プロジェクトへのリンク先を変更](./change_project_link_on_project_list.js)
-* [カスタムフィールドを連動させる(親の値に応じて、子を絞り込む)](./link_custom_field.js)
-* [コンテキストメニューを選択しやすくする](./adjust_context_submenu.css)
-* [チケット一覧のコンテキストメニューでステータス変更を無効に](./handling_issue_list_context_menu.js)
-* [チケットのステータスに応じて、カスタムフィールドの表示/非表示を切り替える](./change_custom_field_visibility_when_change_status.js)
-* [新しいチケットタブを表示する(Redmine3.3で"+"ボタンと両立した時)](./add_new_issue_tab.js)
-* [チケット一覧の進捗率にて値も表示する](./add_value_of_progress_on_issues_list.js)
-* [カスタムフィールドのチェックボックスを2列で表示](./multi_column_checkbox.css)
-* [チケット一覧のコンテキストメニューにコマンド追加](./add_command_to_issues_context_menu.js)
-* [ステータスに応じて、カスタムフィールドの表示を切り替える](./change_custom_field_visibility_when_change_status.js)
-* [チェックボックスを横並びにする](./row_checkbox.css)
-* [チケット一覧のコンテキストメニューからステータスを切り替えた際に、バージョンも変更する](./change_version_when_change_status_on_context_menu.js)
-* [カスタムフィールドを説明の後ろに移動](./move_custom_filed_after_description.js)
-* [チケットの説明を非表示に](./hide_issue_description.js)
-* [リポジトリタブでのデフォルトブランチを変更](./change_default_branch_on_repository_tab.js)
-* [カスタムフィールドの値でチケット一覧のフォントをBoldに変える](./change_font_weight_by_custom_field_on_issue_list.js)
-* [子チケット一覧に親子関係を外すボタンを追加し、ボタン押下時にREST APIを使って親チケットの情報をクリアする](./add_button_use_rest_api.js)
-* [チケット作成、編集画面の作成/送信ボタンにaccesskeyを追加する](./add_accesskey_on_issue_submit_button.js)
-* [長いテキストを幅広く表示する](./display_long_text_wide.js)
-* [担当者を入力補完を利用して選択する](./autocomplete_assigned_to.js)
-* [REST APIを利用して複数の子チケットをまとめて作成する(バージョン1.2.0以上)](./create_children_issues_using_rest_api.js)
-* [REST APIを利用して複数の関連チケットをまとめて作成する(バージョン1.2.0以上)](./create_relation_issues_using_rest_api.js)
-* [REST APIを利用して親チケットの情報をクリアする(バージョン1.2.0以上)](./delete_parentage_relationship_using_rest_api.js)
-* [子チケット作成時に親チケットの情報を引き継ぐ(バージョン1.2.0以上)](./take_over_information_when_adding_child_issue.js)
-* [クリップボードから画像を貼り付ける(バージョン1.2.0以上)](./copy_image_from_clipboard.js)
-* [テキストエリアで入力補完(バージョン2.1.0以上)](./input_suggestion_on_textarea.html)
-* [プロジェクトを変更したら、強制的に担当者を変更する(バージョン1.2.0以上)](./change_assignee_when_change_project.js)
-* [カスタムフィールドの入力欄をトラッカーの後ろに移動(バージョン1.2.0以上)](./move_custom_filed_input_after_tracker.js)
-* [ステータスを却下にしたときに、期日が未入力だったら今日の日付を入れる(バージョン1.2.0以上)](./set_today_to_due_date_when_resolved.js)
+This is a project that publishes code examples of [View customize plugin for Redmine](https://github.com/onozaty/redmine-view-customize).  
+Please refer to it when you write your code.
+
+If the code you try does not work, you can ask a question via the project's [Issue](https://github.com/onozaty/redmine-view-customize-scripts/issues).  
+**Please note that this is a place to ask questions, not a place to request coding.**
+
+This project is maintained by [@onozaty](https://github.com/onozaty), the author of the View customize plugin.  
+If this project serves you well, please support this project as a [sponsor](https://github.com/sponsors/onozaty).
+
+## Examples 
+
+### Issue input / チケット入力
+
+* [Set the default value by tracker / トラッカーに応じてデフォルト値を設定](./examples/0003.set_default_value_by_tracker/example.md)  
+* [Link custom fields (refining the children according to the parent value) / カスタムフィールドを連動させる(親の値に応じて、子を絞り込む)](./examples/0007.link_custom_fields/example.md)  
+* [Change the visibility of custom fields by status / チケットのステータスに応じて、カスタムフィールドの表示/非表示を切り替える](./examples/0008.change_custom_field_visibility_by_status/example.md)
+* [Display custom field checkboxes in two columns / カスタムフィールドのチェックボックスを2列で表示](./examples/0011.custom_field_checkbox_two_columns/example.md)
+* [Display custom field checkboxes horizontally / カスタムフィールドのチェックボックスを横並びで表示](./examples/0012.custom_field_checkbox_horizontally/example.md)
+* [Add an accesskey to the submit button of the issue / チケットの送信ボタンにアクセスキーを追加](./examples/0017.add_accesskey_on_issue_submit_button/example.md)
+* [Add a search function to the selectbox / セレクトボックスに検索機能を追加](./examples/0018.add_search_function_to_selectbox/example.md)
+* [Change done and assignee by status / ステータス毎に進捗率と担当者を変更](./examples/0019.change_done_and_assignee_by_status/example.md)
+* [Automatically sets each item at the close of the issue / ステータスを終了にした時に、各項目を自動的に設定](./examples/0020.when_status_closed_set_items/example.md)
+
+### Issue detail / チケット詳細
+
+* [Move custom field to after description / カスタムフィールドを説明の後ろに移動](./examples/0014.move_custom_field_to_after_description/example.md)
+* [Create a subtask using the REST API / REST APIを使って子チケットを作成](./examples/0021.create_subtasks_using_rest_api/example.md)
+* [Create a related issues using the REST API / REST APIを使って関連チケットを作成](./examples/0022.create_related_issues_using_rest_api/example.md)
+* [When creating a child issue, the information from the parent issue is used / 子チケット作成時に親チケットの情報を利用](./examples/0023.when_create_child_use_parent_infomation/example.md)
+
+### Issues list / チケット一覧
+
+* [Decorate the issue list / チケット一覧を装飾](./examples/0002.decorate_issue_list/example.md)  
+* [Add a progress value to the issue list / チケット一覧に進捗の値を追加](./examples/0010.add_progress_value_to_issue_list/example.md)  
+* [Change the version when the status is changed from the context menu of the issue list / チケット一覧のコンテキストメニューからステータスを変更した際に、バージョン番号も変更](./examples/0013.change_version_when_status_change_from_context_menu/example.md)
+* [Change the font of the ticket list according to the value of the custom field / カスタムフィールドの値に応じて、チケットリストのフォントを変更](./examples/0016.change_font_of_issue_list_by_custom_field/example.md)
+
+### Other / その他
+
+* [Change the color of the header for each project / プロジェクト毎にヘッダの色を変える](./examples/0001.change_header_color_by_project/example.md)  
+* [Toggle the display of the sidebar / サイドバーの表示・非表示を切り替え](./examples/0004.toggle_sidebar/example.md)  
+* [Add a link to the list of all issues on the header / 全てのチケット一覧のリンクをヘッダに追加](./examples/0005.add_issues_link_on_header/example.md)  
+* [Change the URL of the link to each project in the project list / プロジェクト一覧の各プロジェクトへのリンクのURLを変更](./examples/0006.change_project_link_url/example.md)  
+* [Add a new issue tab (and "+" button available) / 新しいチケットタブを追加 ("+"ボタンと両立)](./examples/0009.add_new_issue_tab/example.md)  
+* [Change the default branch on the Repository tab / リポジトリタブのデフォルトブランチを変更](./examples/0015.change_default_branch_on_repository_tab/example.md)  
+
+### Old
+
+* [テキストエリアで入力補完(バージョン2.1.0以上)](./old-examples/input_suggestion_on_textarea.html)
+* [プロジェクトを変更したら、強制的に担当者を変更する(バージョン1.2.0以上)](./old-examples/change_assignee_when_change_project.js)
+* [カスタムフィールドの入力欄をトラッカーの後ろに移動(バージョン1.2.0以上)](./old-examples/move_custom_filed_input_after_tracker.js)
+* [プロジェクトを変更したら、ウォッチャーを変更する(バージョン1.2.0以上)](./old-examples/change_watcher_when_change_project.js)
+* [特定のプロジェクトでファイル添付を非表示にする](./old-examples/hide_attachments_form.css)
+* [カスタムフィールドを3カラムで表示する(バージョン1.2.0以上)](./old-examples/change_3column_custom_fields.js)
+* [親のカスタムフィールドが選択されたら、子のカスタムフィールドも入力可能に(バージョン1.2.0以上)](./old-examples/enable_when_custom_field_selected.js)
+* [期日の3日前になったら警告を表示(バージョン1.2.0以上)](./old-examples/show_alert_on_due_date.js)
+* [チェックされたらテキストボックスを無効化(バージョン1.2.0以上)](./old-examples/disable_text_depending_on_checked.js)
+* [特定ユーザの削除、ロックボタンを非表示にする](./old-examples/hide_lock_button_and_delete_button.css)
+* [特定ユーザに対して一部管理者メニューを非表示にする](./old-examples/hide_part_of_admin_menu.js)
+* [特定の日以降は新規チケットのリンクを非表示に](./old-examples/hide_new_issue_link_after_date.js)
+* [チケット一覧横のSummaryリンクを非表示に](./old-examples/hide_issue_summary_link.css)
+* [親チケットが設定されたらカスタムフィールドを無効に](./old-examples/disable_if_parent_issue_is_set.js)
+* [チケットタブでのデフォルトクエリ変更](./old-examples/change_issue_default_query.js)
+* [チケット一覧を折りたたんだ状態で表示する](./old-examples/folded_issues.js)

@@ -1,15 +1,14 @@
 ## Process when creating or saving an issue
 
 ```javascript
-$('#issue-form').on('submit', function() {
-
+document.getElementById('issue-form').addEventListener('submit', (e) => {
   if (!confirm('Are you sure?')) {
-    // If you don't reset it, it won't be submitted the next time.
-    this.dataset.submitted = '';
-    // If it returns false, it will not be executed.
+    // Cancel the form submission
+    e.stopPropagation();
+    e.preventDefault();
     return false;
   }
-});
+}, true); // Use capturing phase to prevent double-submit protection from being triggered when user cancels
 ```
 
 ## Judge the creation and editing of an issue

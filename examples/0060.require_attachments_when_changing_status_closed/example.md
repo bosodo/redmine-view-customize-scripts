@@ -32,22 +32,21 @@ HTML
 $(function() {
   const beforeStatusId = $('#issue_status_id').val();
 
-  $(document).on('submit', '#issue-form', function() {
+  document.getElementById('issue-form').addEventListener('submit', function(e) {
     const afterStatusId = $('#issue_status_id').val();
 
     if (afterStatusId != beforeStatusId && afterStatusId == '5') { // 5: Closed
       if ($('#new-attachments .attachments_fields input.filename').length == 0) { // Check zero attachments
 
-        // If you don't reset it, it won't be submitted the next time.
-        this.dataset.submitted = '';
-
         alert('If status is changed to Closed, attachments are required.');
 
-        // If it returns false, it will not be executed.
+        // Cancel the form submission
+        e.stopPropagation();
+        e.preventDefault();
         return false;
       }
     }
-  });
+  }, true); // Use capturing phase to prevent double-submit protection from being triggered when user cancels
 });
 ```
 
